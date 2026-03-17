@@ -1,0 +1,9 @@
+services:
+  minesweeper:
+    build: .
+    container_name: minesweeper
+    restart: unless-stopped
+    ports:
+      - "8773:8080"
+    mem_limit: 16m
+    cpus: 0.05
